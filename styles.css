@@ -1,0 +1,642 @@
+/* Titulo */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+/* Paragrafo */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    background: url('./images/fundo.jpg') no-repeat center center/cover;
+}
+
+/* Sobreposição escura para melhor legibilidade */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fundo escuro transparente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilização da logo */
+.overlay img {
+    max-width: 160px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Estilização do texto */
+.overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'Shadows Into Light', serif;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.2);
+}
+
+@media (max-width: 768px) {
+    .overlay img {
+        max-width: 130px;
+        margin-bottom: 15px;
+    }
+
+    .overlay h1 {
+        font-size: 2rem;
+    }
+
+    .overlay p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.2rem;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay img {
+        max-width: 110px;
+        margin-bottom: 10px;
+    }
+
+    .overlay h1 {
+        font-size: 1.6rem;
+    }
+
+    .overlay p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 0.6rem 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.sobre {
+    background: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobre h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Estilização dos cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.container h2 {
+    font-family: 'Shadows Into Light', serif;
+    color: #011e41;
+}
+
+.container p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #011e41;
+    margin-bottom: 10px;
+    font-family: 'Shadows Into Light', serif;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.aprendizado {
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.aprendizado h2 {
+    font-size: 2rem;
+    color: #011e41;
+    margin-bottom: 20px;
+    font-family: 'Shadows Into Light', serif;
+}
+
+.aprendizado p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #011e41;
+    margin-bottom: 10px;
+    font-family: 'Shadows Into Light', serif;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.publico {
+    background: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.publico h2 {
+    font-size: 2rem;
+    color: #011e41;
+    margin-bottom: 20px;
+    font-family: 'Shadows Into Light', serif;
+}
+
+.publico p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #011e41;
+    margin-bottom: 10px;
+    font-family: 'Shadows Into Light', serif;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.funcionamento {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow-x: hidden;
+    width: 100vw;
+    background: url('./images/fundo2.jpg') no-repeat center center/cover;
+}
+
+.funcionamento .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.funcionamento h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Shadows Into Light', serif;
+}
+
+.funcionamento p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 800px;
+}
+
+.funcionamento .cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.funcionamento .card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.funcionamento .card:hover {
+    transform: translateY(-5px);
+}
+
+.funcionamento .card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    filter: invert(1);
+}
+
+.funcionamento .card h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+    font-family: 'Shadows Into Light', serif;
+}
+
+.funcionamento .card p {
+    font-size: 1rem;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 1024px) {
+    .funcionamento {
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .funcionamento .overlay {
+        position: relative;
+        width: 100vw;
+        height: auto;
+        min-height: 100vh;
+        padding: 40px 20px;
+    }
+
+    .funcionamento h2 {
+        font-size: 2rem;
+    }
+
+    .funcionamento p {
+        font-size: 1rem;
+    }
+
+    .funcionamento .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .funcionamento .card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+
+
+
+.inscricao {
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.inscricao h2 {
+    font-size: 2rem;
+    color: #011e41;
+    margin-bottom: 20px;
+    font-family: 'Shadows Into Light', serif;
+}
+
+.inscricao p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+form input {
+    padding: 12px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* style.css */
+:root {
+    --primary-color: #d4af37;
+    --dark-background: #011e41;
+    --text-light: #ffffff;
+  }
+  
+  /* Agora o fundo da seção é branco */
+  .question {
+    padding: 100px 5%;
+    background-color: #ffffff;
+  }
+  
+  .question-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .question-item {
+    background: var(--dark-background); /* Mantém os cards com fundo azul escuro */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .question-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .question-header .subtitle {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    color: var(--dark-background);
+    font-family: ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+  }
+  
+  .question-header h2 {
+    font-size: 2.5rem;
+    color: var(--dark-background);
+    margin: 0;
+    font-family: 'Shadows Into Light', serif;
+    font-weight: 300;
+  }
+  
+  .question-title {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    font-family: ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    color: white;
+  }
+  
+  .question-title:hover {
+    color: var(--primary-color);
+    transition: color 0.9s ease;
+  }
+  
+  .question-title h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .toggle-icon {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    min-width: 24px;
+    text-align: center;
+  }
+  
+  .question-answer {
+    padding: 0 1.5rem;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    background-color: var(--dark-background);
+    max-height: 0;
+    opacity: 0;
+  }
+  
+  .question-answer p {
+    opacity: 0.8;
+    line-height: 1.6;
+    margin: 0;
+    padding-bottom: 1.5rem;
+    color: white;
+    word-wrap: break-word;
+    word-break: break-word;
+    font-family: 'Open Sans', sans-serif;
+    white-space: normal;
+  }
+  
+  @media (max-width: 768px) {
+    .question-title h3 {
+      font-size: 1rem;
+    }
+  
+    .question-answer p {
+      font-size: 0.95rem;
+    }
+  
+    .question-header .subtitle {
+      font-size: 1rem;
+    }
+  
+    .question-header h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .question-title {
+      padding: 1rem;
+    }
+  
+    .question-answer {
+      padding: 0 1rem;
+    }
+  
+    .question-answer p {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+  .footer {
+    background-color: #011e41;
+    color: white;
+    padding: 30px 5%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .btn-topo {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    background-color: #011e41;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-topo:hover {
+    background-color: #d4af37;
+    color: #011e41;
+  }
+  
